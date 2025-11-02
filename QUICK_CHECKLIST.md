@@ -18,10 +18,12 @@
 - [ ] Set Primary Keys (AutoNumber)
 
 ### Data Entry
+- [ ] Import data using IMPORT_DATA_GUIDE.md OR enter manually
 - [ ] Enter minimum 10 Members records
 - [ ] Enter minimum 10 Classes records
 - [ ] Enter minimum 5 Instructors records
 - [ ] Verify InstructorID values match in Classes table (1-5)
+- [ ] Import order: Instructors → Members → Classes
 
 ### Relationships
 - [ ] Create relationship: Instructors → Classes
