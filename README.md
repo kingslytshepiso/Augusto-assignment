@@ -180,8 +180,11 @@ ACCESS_SQL_IMPORT_GUIDE.md      → Quick SQL import method
 ### 📝 Question 2 Files
 
 ```
-QUESTION2_INSTRUCTIONS.md    → Detailed screenshot & answer steps
-QUESTION2_ANSWER_TEMPLATE.md → Complete answer template with placeholders
+QUESTION2_INSTRUCTIONS.md         → Detailed screenshot & answer steps
+QUESTION2_ANSWER_TEMPLATE.md     → Complete answer template with placeholders
+QUESTION2_FINAL_DOCUMENT.md      → Word-ready document with all answers
+QUESTION2_Word_Document_Ready.txt → Plain text version for easy copying
+COPY_TO_WORD_INSTRUCTIONS.md     → How to copy to Microsoft Word
 ```
 
 ### ✅ Reference Files
