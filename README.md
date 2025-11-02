@@ -1,161 +1,352 @@
-# Fitness Centre Database - Assignment Files
+# Fitness Centre Database Assignment - Complete Guide
 
-This repository contains all the necessary files and documentation to complete HCLT108-1 Formative Assessment 3.
+**Course:** HCLT108-1 - Computer Literacy Advanced  
+**Assessment:** Formative Assessment 3  
+**Due Date:** 3 November 2025  
+**Total Marks:** 50 (Question 1: 20 marks | Question 2: 30 marks)
+
+---
+
+## 📚 Quick Navigation
+
+- **[Getting Started](#-getting-started)** - Choose your method
+- **[Question 1 Guide](#-question-1-database-creation-20-marks)** - Database setup
+- **[Question 2 Guide](#-question-2-written-answers--screenshots-30-marks)** - Answers & screenshots
+- **[File Structure](#-file-structure)** - All available files
+- **[Submission Checklist](#-submission-checklist)** - Final verification
+
+---
+
+## 🚀 Getting Started
+
+### Choose Your Database Creation Method:
+
+#### **Option A: Quick SQL Method (Recommended for speed)**
+
+1. Read: `ACCESS_SQL_IMPORT_GUIDE.md`
+2. Use: `access_create_tables.sql`
+3. **Then:** Set Required fields and Input Mask manually
+
+#### **Option B: Manual Step-by-Step Method**
+
+1. Read: `ACCESS_DATABASE_CREATION_GUIDE.md`
+2. Follow each step carefully
+3. More detailed, slower but thorough
+
+### Essential Files You Need:
+
+- ✅ Sample data CSV files (for importing records)
+- ✅ Question 2 answer template
+- ✅ Question 2 screenshot instructions
+
+---
+
+## 📋 Question 1: Database Creation (20 marks)
+
+### Requirements Summary:
+
+- Create 3 tables: **Members**, **Instructors**, **Classes**
+- Add **ClassLocation** field to Classes table
+- Minimum 10 records in Members & Classes
+- Minimum 5 records in Instructors
+- Set **Required = Yes** for all fields
+- Set **Input Mask: 000-000-0000** for PhoneNumber
+- Create relationships with referential integrity
+
+### Step-by-Step:
+
+1. **Create Database Structure**
+
+   - Use SQL method OR manual method (see guides above)
+   - Verify all 3 tables exist
+
+2. **Set Field Properties**
+
+   - Open each table in **Design View**
+   - Set **Required = Yes** for all fields
+   - Add **Input Mask** to PhoneNumber in Members table
+
+3. **Add Data**
+
+   - Import from CSV files OR enter manually
+   - Verify record counts (10+ Members, 10+ Classes, 5+ Instructors)
+
+4. **Create Relationships**
+
+   - **Database Tools** → **Relationships**
+   - Link Instructors → Classes
+   - Enable **Referential Integrity**
+
+5. **Final Checks**
+   - Verify naming conventions (PascalCase)
+   - Test Input Mask works
+   - Save database (.accdb file)
+
+### 📖 Detailed Guides:
+
+- **Manual Method:** `ACCESS_DATABASE_CREATION_GUIDE.md`
+- **SQL Method:** `ACCESS_SQL_IMPORT_GUIDE.md`
+- **Quick Checklist:** `QUICK_CHECKLIST.md`
+
+---
+
+## 📝 Question 2: Written Answers & Screenshots (30 marks)
+
+### Overview:
+
+- **2.1** - Written explanation of tables (6 marks) - NO SCREENSHOT
+- **2.2** - Written description of data types (6 marks) - NO SCREENSHOT
+- **2.3** - Relationship diagram screenshot (5 marks) - ⚠️ **SCREENSHOT REQUIRED**
+- **2.4** - Query result screenshot (4 marks) - ⚠️ **SCREENSHOT REQUIRED**
+- **2.5** - Form screenshot (4 marks) - ⚠️ **SCREENSHOT REQUIRED**
+- **2.6** - Report screenshot (5 marks) - ⚠️ **SCREENSHOT REQUIRED**
+
+### Detailed Requirements:
+
+#### 2.1 Explain Three Tables (6 marks) - 📄 **WRITTEN ANSWER**
+
+**No screenshot needed** - Write explanation of:
+
+- Members table function & purpose
+- Instructors table function & purpose
+- Classes table function & purpose
+
+#### 2.2 Describe Six Data Types (6 marks) - 📄 **WRITTEN ANSWER**
+
+**No screenshot needed** - Describe:
+
+- Short Text
+- Long Text
+- Number
+- Date/Time
+- Currency
+- AutoNumber
+
+#### 2.3 Relationship Diagram (5 marks) - 📸 **SCREENSHOT REQUIRED**
+
+- **Action:** Create relationship between Instructors and Classes
+- **Requirement:** Show referential integrity (thick line)
+- **Screenshot:** Must show all tables, fields, and relationship lines
+- **Guide:** See `QUESTION2_INSTRUCTIONS.md` section 2.3
+
+#### 2.4 Query Result (4 marks) - 📸 **SCREENSHOT REQUIRED**
+
+- **Action:** Query Instructors table
+- **Requirement:** All attributes, sorted by Specialty (Descending)
+- **Screenshot:** Show query results in Datasheet View
+- **Guide:** See `QUESTION2_INSTRUCTIONS.md` section 2.4
+
+#### 2.5 Tabular Form (4 marks) - 📸 **SCREENSHOT REQUIRED**
+
+- **Action:** Create tabular form of Members table
+- **Requirement:** Header in **Arial Black, size 24**
+- **Screenshot:** Show form with header and all records
+- **Guide:** See `QUESTION2_INSTRUCTIONS.md` section 2.5
+
+#### 2.6 Report (5 marks) - 📸 **SCREENSHOT REQUIRED**
+
+- **Action:** Create report of Classes table
+- **Requirement:** **NO grouping levels**
+- **Screenshot:** Show report with all attributes, no grouping
+- **Guide:** See `QUESTION2_INSTRUCTIONS.md` section 2.6
+
+### 📖 Complete Guides:
+
+- **Step-by-Step Instructions:** `QUESTION2_INSTRUCTIONS.md`
+- **Answer Template:** `QUESTION2_ANSWER_TEMPLATE.md`
+- **Screenshot Quick Reference:** `SCREENSHOT_REQUIREMENTS.md`
+
+---
 
 ## 📁 File Structure
 
-### Data Files
+### 📊 Data Files (Import into Access)
 
-- `sample_data_members.csv` - 12 sample member records (minimum 10 required)
-- `sample_data_classes.csv` - 12 sample class records (minimum 10 required)
-- `sample_data_instructors.csv` - 5 sample instructor records (minimum 5 required)
+```
+sample_data_members.csv      → 12 member records
+sample_data_classes.csv       → 12 class records
+sample_data_instructors.csv  → 5 instructor records
+```
 
-### Documentation Files
+### 🔧 Database Creation Files
 
-- `database_structure.sql` - SQL reference for table structures
-- `access_create_tables.sql` - **Access-compatible SQL to create tables quickly**
-- `ACCESS_DATABASE_CREATION_GUIDE.md` - Step-by-step guide to create the Access database
-- `ACCESS_SQL_IMPORT_GUIDE.md` - **Guide to import SQL structure into Access**
-- `QUESTION2_INSTRUCTIONS.md` - Detailed instructions for Question 2 tasks
-- `QUESTION2_ANSWER_TEMPLATE.md` - Template for Question 2 answers
+```
+database_structure.sql           → SQL reference (generic)
+access_create_tables.sql         → Access-compatible SQL (use this!)
+ACCESS_DATABASE_CREATION_GUIDE.md → Manual step-by-step guide
+ACCESS_SQL_IMPORT_GUIDE.md      → Quick SQL import method
+```
 
-## 📋 Assignment Overview
+### 📝 Question 2 Files
 
-### Question 1 [20 Marks]
+```
+QUESTION2_INSTRUCTIONS.md    → Detailed screenshot & answer steps
+QUESTION2_ANSWER_TEMPLATE.md → Complete answer template with placeholders
+```
 
-Create a Microsoft Access database with:
+### ✅ Reference Files
 
-- **Members Table**: MemberID, FirstName, LastName, Email, PhoneNumber, MembershipType
-- **Classes Table**: ClassID, ClassName, InstructorID, Schedule, Capacity, ClassLocation
-- **Instructors Table**: InstructorID, FirstName, LastName, Specialty, ContactNumber
+```
+README.md                  → This file (main guide)
+QUICK_CHECKLIST.md        → Quick reference checklist
+SCREENSHOT_REQUIREMENTS.md → Quick screenshot reference guide
+```
 
-**Requirements:**
+---
 
-- At least 10 records in Members and Classes tables
-- At least 5 records in Instructors table
-- Field properties: Required = Yes, Input Mask for PhoneNumber
-- Proper naming conventions
-- Relationships with referential integrity
+## ⚠️ Screenshot Requirements Summary
 
-### Question 2 [30 Marks]
+### **4 Screenshots Required for Question 2:**
 
-Answer questions and create screenshots for:
+| Question | What to Screenshot   | Requirements                                                          |
+| -------- | -------------------- | --------------------------------------------------------------------- |
+| **2.3**  | Relationship Diagram | Show all tables, fields, relationship line with referential integrity |
+| **2.4**  | Query Result         | Instructors table, all fields, sorted by Specialty (Descending)       |
+| **2.5**  | Tabular Form         | Members table, Arial Black 24pt header, all records visible           |
+| **2.6**  | Report               | Classes table, all fields, **NO grouping levels**                     |
 
-- 2.1: Explain three main tables (6 marks)
-- 2.2: Describe six MS Access data types (6 marks)
-- 2.3: Relationship diagram screenshot (5 marks)
-- 2.4: Query screenshot (Instructors sorted by Specialty) (4 marks)
-- 2.5: Tabular form screenshot (Members with Arial Black 24pt header) (4 marks)
-- 2.6: Report screenshot (Classes, no grouping) (5 marks)
+### Screenshot Tips:
 
-## 🚀 Quick Start Guide
+- **Tool:** Windows Snipping Tool (Win + Shift + S) or Print Screen
+- **Format:** Save as PNG or JPG
+- **Quality:** Ensure text is clear and readable
+- **Caption:** Add captions in your PDF (e.g., "Figure 1: Relationship Diagram")
+- **Include:** All required elements must be visible
 
-1. **Read the Guides:**
-
-   - Start with `ACCESS_DATABASE_CREATION_GUIDE.md` for Question 1
-   - **OR use `ACCESS_SQL_IMPORT_GUIDE.md` to create tables quickly with SQL**
-   - Review `QUESTION2_INSTRUCTIONS.md` for Question 2
-
-2. **Create the Database:**
-
-   - **Option A (Fast):** Use `access_create_tables.sql` in Access SQL View
-   - **Option B (Manual):** Follow the step-by-step guide in `ACCESS_DATABASE_CREATION_GUIDE.md`
-   - Import data from CSV files or enter manually
-   - **Important:** Set Required fields and Input Mask manually after SQL creation
-
-3. **Complete Question 2:**
-
-   - Use `QUESTION2_ANSWER_TEMPLATE.md` as your answer template
-   - Follow instructions in `QUESTION2_INSTRUCTIONS.md` for screenshots
-
-4. **Submission:**
-   - Upload the Access database (.accdb file)
-   - Upload a PDF with Question 2 answers and screenshots
-   - **Do NOT zip the files** - upload separately
-
-## 📝 Important Notes
-
-### Naming Conventions
-
-- Tables: PascalCase (Members, Classes, Instructors)
-- Fields: PascalCase (MemberID, FirstName, LastName)
-- No spaces or special characters
-
-### Field Properties
-
-- **Required**: Set to "Yes" for all important fields
-- **Input Mask**: PhoneNumber in Members table = `000-000-0000`
-- **Primary Keys**: All tables use AutoNumber for ID fields
-
-### Relationships
-
-- Instructors → Classes (One-to-Many via InstructorID)
-- Enforce referential integrity
-- Cascade update related fields
-
-### Data Requirements
-
-- Members: Minimum 10 records (12 provided)
-- Classes: Minimum 10 records (12 provided)
-- Instructors: Minimum 5 records (5 provided)
+---
 
 ## ✅ Submission Checklist
 
-### Question 1 (Database):
+### Question 1 - Database (.accdb file):
 
-- [ ] All three tables created correctly
-- [ ] Members table with all 6 fields (including ClassLocation in Classes)
-- [ ] Instructors table created and populated
-- [ ] At least 10 records in Members table
-- [ ] At least 10 records in Classes table
-- [ ] At least 5 records in Instructors table
-- [ ] All Required fields set to "Yes"
-- [ ] PhoneNumber Input Mask applied
-- [ ] Relationships created with referential integrity
-- [ ] Database saved (.accdb file)
+- [ ] All 3 tables created (Members, Instructors, Classes)
+- [ ] Members table: 6 fields (MemberID, FirstName, LastName, Email, PhoneNumber, MembershipType)
+- [ ] Classes table: 6 fields (ClassID, ClassName, InstructorID, Schedule, Capacity, **ClassLocation**)
+- [ ] Instructors table: 5 fields (InstructorID, FirstName, LastName, Specialty, ContactNumber)
+- [ ] Minimum 10 records in Members table
+- [ ] Minimum 10 records in Classes table
+- [ ] Minimum 5 records in Instructors table
+- [ ] **Required = Yes** set for all important fields
+- [ ] **Input Mask: 000-000-0000** applied to PhoneNumber in Members table
+- [ ] Relationship created: Instructors → Classes with referential integrity
+- [ ] Naming conventions correct (PascalCase, no spaces)
+- [ ] Database saved as .accdb file
 
-### Question 2 (PDF):
+### Question 2 - PDF Document:
 
-- [ ] Answer to 2.1 (explanation of three tables)
-- [ ] Answer to 2.2 (six data types)
-- [ ] Screenshot of relationship diagram (2.3)
-- [ ] Screenshot of query (2.4)
-- [ ] Screenshot of form (2.5)
-- [ ] Screenshot of report (2.6)
-- [ ] PDF properly formatted and ready to upload
+- [ ] Cover page with name, student number, course code, date
+- [ ] **2.1:** Written explanation of three tables (6 marks)
+- [ ] **2.2:** Written description of six data types (6 marks)
+- [ ] **2.3:** ⚠️ **SCREENSHOT** - Relationship diagram (5 marks)
+- [ ] **2.4:** ⚠️ **SCREENSHOT** - Query result (4 marks)
+- [ ] **2.5:** ⚠️ **SCREENSHOT** - Tabular form (4 marks)
+- [ ] **2.6:** ⚠️ **SCREENSHOT** - Report (5 marks)
+- [ ] All screenshots have captions
+- [ ] PDF is clear, readable, and properly formatted
+- [ ] Ready to upload
 
-## 🎯 Grading Rubric Reference
+### Final Submission:
+
+- [ ] Access database file (.accdb) ready
+- [ ] PDF document with answers and screenshots ready
+- [ ] **Files are NOT zipped** (upload separately)
+- [ ] Both files uploaded to Colcampus separately
+
+---
+
+## 🎯 Grading Rubric
 
 ### Question 1 (20 marks):
 
-- Database structure: 2 marks
-- Populate Members & Classes: 4 marks
-- Create Instructors table: 5 marks
-- Add ClassLocation column: 2 marks
-- Field properties & Input Mask: 3 marks
-- Naming conventions: 4 marks
+- Database structure: **2 marks**
+- Populate Members & Classes (10+ records each): **4 marks**
+- Create Instructors table (5+ records): **5 marks**
+- Add ClassLocation column: **2 marks**
+- Field properties & Input Mask: **3 marks**
+- Naming conventions & consistency: **4 marks**
 
 ### Question 2 (30 marks):
 
-- Table explanations: 6 marks
-- Data types description: 6 marks
-- Relationship screenshot: 5 marks
-- Query screenshot: 4 marks
-- Form screenshot: 4 marks
-- Report screenshot: 5 marks
+- 2.1 - Table explanations (written): **6 marks**
+- 2.2 - Data types description (written): **6 marks**
+- 2.3 - Relationship screenshot: **5 marks** ⚠️
+- 2.4 - Query screenshot: **4 marks** ⚠️
+- 2.5 - Form screenshot: **4 marks** ⚠️
+- 2.6 - Report screenshot: **5 marks** ⚠️
 
-## 📧 Support
+---
 
-Refer to the study guide for additional information on:
+## 📖 Which Guide to Use?
 
-- MS Access data types
-- Creating relationships
-- Query design
-- Form creation
-- Report generation
+### If you want to create tables quickly:
+
+→ Read: `ACCESS_SQL_IMPORT_GUIDE.md`  
+→ Use: `access_create_tables.sql`
+
+### If you prefer detailed step-by-step:
+
+→ Read: `ACCESS_DATABASE_CREATION_GUIDE.md`
+
+### For Question 2 screenshots:
+
+→ Read: `QUESTION2_INSTRUCTIONS.md`  
+→ Use: `QUESTION2_ANSWER_TEMPLATE.md`
+
+### For quick reference:
+
+→ Read: `QUICK_CHECKLIST.md`
+
+### For screenshot requirements:
+
+→ Read: `SCREENSHOT_REQUIREMENTS.md`
+
+---
+
+## 💡 Important Notes
+
+### Naming Conventions:
+
+- **Tables:** PascalCase (Members, Classes, Instructors)
+- **Fields:** PascalCase (MemberID, FirstName, LastName)
+- **No spaces or special characters**
+
+### Field Properties:
+
+- **Required:** Set to "Yes" for all important fields
+- **Input Mask:** PhoneNumber = `000-000-0000` (only in Members table)
+- **Primary Keys:** AutoNumber fields (automatic)
+
+### Relationships:
+
+- **Instructors (1) → Classes (Many)** via InstructorID
+- **Must enable:** Referential Integrity
+- **Optional:** Cascade Update Related Fields
+
+### Common Mistakes to Avoid:
+
+- ❌ Forgetting ClassLocation column in Classes table
+- ❌ Not setting Required = Yes after SQL creation
+- ❌ Forgetting Input Mask on PhoneNumber
+- ❌ Adding grouping to Classes report (must have NO grouping)
+- ❌ Wrong font/size on form header (must be Arial Black 24pt)
+- ❌ Wrong sort order on query (must be Descending)
+- ❌ Zipping files (must upload separately)
+
+---
 
 ## 📅 Due Date
 
 **3 November 2025**
 
+Submit:
+
+1. Access database (.accdb file)
+2. PDF with Question 2 answers and screenshots
+
+**Upload separately - do NOT zip!**
+
+---
+
 Good luck with your assignment! 🎓
+
+For detailed instructions, refer to the specific guide files listed above.

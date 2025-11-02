@@ -37,15 +37,15 @@
 
 ## Question 2: Answers and Screenshots
 
-### Written Answers
-- [ ] 2.1: Explain three tables (function & purpose) - 6 marks
-- [ ] 2.2: Describe six data types - 6 marks
+### Written Answers (No Screenshots)
+- [ ] 2.1: Explain three tables (function & purpose) - 6 marks - 📄 WRITTEN ONLY
+- [ ] 2.2: Describe six data types - 6 marks - 📄 WRITTEN ONLY
 
-### Screenshots Required
-- [ ] 2.3: Relationship diagram with referential integrity
-- [ ] 2.4: Query - Instructors sorted by Specialty (descending)
-- [ ] 2.5: Tabular form - Members with Arial Black 24pt header
-- [ ] 2.6: Report - Classes with no grouping levels
+### Screenshots Required ⚠️
+- [ ] 2.3: 📸 Relationship diagram with referential integrity - 5 marks
+- [ ] 2.4: 📸 Query - Instructors sorted by Specialty (descending) - 4 marks
+- [ ] 2.5: 📸 Tabular form - Members with Arial Black 24pt header - 4 marks
+- [ ] 2.6: 📸 Report - Classes with no grouping levels - 5 marks
 
 ### PDF Creation
 - [ ] Add cover page with your details
@@ -90,4 +90,5 @@
 - Windows: Win + Shift + S (Snipping Tool)
 - Save as: PNG or JPG
 - Include captions in PDF
+- **4 screenshots required** for Question 2 (2.3, 2.4, 2.5, 2.6)
 
