@@ -68,8 +68,9 @@
 
 3. **Add Data**
 
-   - **Import from CSV:** Follow `IMPORT_DATA_GUIDE.md` for step-by-step instructions
-   - **OR enter manually:** Use sample data from CSV files
+   - **Option A (SQL):** Use `import_data_with_sql.sql` - Execute INSERT statements in SQL View
+   - **Option B (Wizard):** Follow `IMPORT_DATA_GUIDE.md` - Use Import Wizard with CSV files
+   - **Option C (Manual):** Enter data manually using sample data
    - Import order: Instructors → Members → Classes (to maintain relationships)
    - Verify record counts (10+ Members, 10+ Classes, 5+ Instructors)
 
@@ -168,7 +169,9 @@
 sample_data_members.csv      → 12 member records
 sample_data_classes.csv       → 12 class records
 sample_data_instructors.csv  → 5 instructor records
-IMPORT_DATA_GUIDE.md         → How to import CSV data into Access
+import_data_with_sql.sql     → SQL INSERT statements for data import
+IMPORT_DATA_GUIDE.md         → How to import CSV data (Import Wizard method)
+SQL_IMPORT_INSTRUCTIONS.md  → How to import data using SQL queries
 ```
 
 ### 🔧 Database Creation Files
