@@ -68,7 +68,8 @@
 
 3. **Add Data**
 
-   - **Option A (SQL):** Use `import_data_with_sql.sql` - Execute INSERT statements in SQL View
+   - **Option A (SQL Batch - Fastest):** Use `import_all_batch.sql` - Copy entire file, paste, run once!
+   - **Option B (SQL Individual):** Use `import_data_with_sql.sql` - Execute INSERT statements one by one
    - **Option B (Wizard):** Follow `IMPORT_DATA_GUIDE.md` - Use Import Wizard with CSV files
    - **Option C (Manual):** Enter data manually using sample data
    - Import order: Instructors → Members → Classes (to maintain relationships)
@@ -169,9 +170,14 @@
 sample_data_members.csv      → 12 member records
 sample_data_classes.csv       → 12 class records
 sample_data_instructors.csv  → 5 instructor records
-import_data_with_sql.sql     → SQL INSERT statements for data import
+import_data_with_sql.sql     → SQL INSERT statements (individual statements)
+import_all_batch.sql          → ALL tables in one batch file (recommended!)
+import_instructors_batch.sql  → Instructors batch (5 records at once)
+import_members_batch.sql      → Members batch (12 records at once)
+import_classes_batch.sql      → Classes batch (12 records at once)
+BATCH_IMPORT_GUIDE.md         → Simplified batch import instructions
 IMPORT_DATA_GUIDE.md         → How to import CSV data (Import Wizard method)
-SQL_IMPORT_INSTRUCTIONS.md  → How to import data using SQL queries
+SQL_IMPORT_INSTRUCTIONS.md   → How to import data using SQL queries
 ```
 
 ### 🔧 Database Creation Files
