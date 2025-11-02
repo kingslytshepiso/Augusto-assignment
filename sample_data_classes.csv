@@ -1,0 +1,14 @@
+ClassName,InstructorID,Schedule,Capacity,ClassLocation
+Morning Yoga Flow,1,Mon/Wed/Fri 06:00-07:00,20,Studio A
+Intensive CrossFit,2,Tue/Thu 18:00-19:30,15,Gym Floor
+Pilates Core Strength,3,Mon/Wed 12:00-13:00,12,Studio B
+Swimming Lessons - Beginner,4,Sat 09:00-10:00,10,Swimming Pool
+Zumba Dance Party,5,Fri 19:00-20:00,25,Studio A
+Advanced CrossFit,2,Mon/Wed/Fri 17:00-18:30,12,Gym Floor
+Yoga Relaxation,1,Tue/Thu 19:00-20:00,18,Studio B
+Swimming Lessons - Advanced,4,Sat 10:00-11:00,8,Swimming Pool
+Pilates Flexibility,3,Tue/Thu 10:00-11:00,15,Studio B
+Zumba Latin Fusion,5,Sat 11:00-12:00,20,Studio A
+Yoga Power Flow,1,Wed 17:00-18:30,16,Studio A
+CrossFit Endurance,2,Sat 08:00-09:30,10,Gym Floor
+
